@@ -1,0 +1,30 @@
+# Eclipse files
+.metadata/
+.classpath
+.project
+.settings/
+
+# Compiled Java files
+bin/
+*.class
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+
+# IntelliJ / VSCode (optional)
+.idea/
+.vscode/
+
+# Maven / Gradle (if added later)
+target/
+build/
+
+# Jar files
+*.jar
