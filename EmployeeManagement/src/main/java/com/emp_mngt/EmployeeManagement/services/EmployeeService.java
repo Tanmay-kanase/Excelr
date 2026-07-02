@@ -7,6 +7,7 @@ import com.emp_mngt.EmployeeManagement.exceptions.ResourceNotFoundException;
 import com.emp_mngt.EmployeeManagement.models.Employee;
 import com.emp_mngt.EmployeeManagement.repository.EmployeeRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -14,6 +15,10 @@ public class EmployeeService {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
+    public EmployeeService(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
 
     public Employee createEmployee(Employee employee) {
         return employeeRepository.save(employee);
