@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="api/employee" method="POST">
+      <input type="text" name="name" id="name" placeholder="enter name " />
+      <input
+        type="text"
+        name="department"
+        id="department"
+        placeholder="Enter department"
+      />
+      <input
+        type="number"
+        name="salary"
+        id="salary"
+        placeholder="enter salary : "
+      />
+      <input type="submit" />
+    </form>
+  </body>
+  <script>
+    async function fetchUser() {
+      const user = await fetch("api/employee");
+      user.json;
+      console.log(user);
+    }
+    fetchUser();
+  </script>
+</html>
